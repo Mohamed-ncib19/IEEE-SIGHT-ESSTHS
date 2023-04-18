@@ -71,7 +71,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+#wrapper{
+	width: 100vw;
+}
 /* Page */
 
 	@-moz-keyframes load-spinner {
@@ -263,6 +265,7 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+		
 
 	}
 
@@ -3544,6 +3547,7 @@ input, select, textarea {
 
 		#page-wrapper {
 			padding: 0;
+			
 		}
 
 	}

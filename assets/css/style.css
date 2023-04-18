@@ -1,34 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
-  background: linear-gradient( 214deg, rgba(68, 134, 217, 1) 24%, rgba(249, 175, 100, 1) 86% );  
+  background: linear-gradient( 214deg, #4486d9 24%, #f9af64 86% ); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
-.row {
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+/*.row {
   display : flex;
   height: 100%;
-}
-.col-md-6.gif {
-  margin: auto;
-}
+}*/
+
 .text {
-  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap ;
   margin: auto;
+  gap: 15px;
 }
 h1 {
-  margin: auto -80px 20px !important;
+  margin: auto;
   font-size: 30px;
-  padding-left: 12vh;
+  
   font-family: cursive;
 }
 p {
   font-family: monospace;
-  margin: auto -80px;
+  margin: auto;
   font-weight: 800;
   color: #eb7900;
   text-decoration: underline;
-  padding-left: 12vh;
-  font-size: 16px;
+  font-size: 20px;
 }
 span {
   font-style: italic;
@@ -45,15 +58,15 @@ b {
 button {
   background-color: transparent;
   border-radius: 15px;
-  padding: 5px 21px;
-  margin-top: 32px;
+  padding: 10px;
+  margin: auto;
   transition-duration: 0.3s;
   font-family: "lato", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   border: 1px solid #366db3;
   color: #366db3;
-  margin-left: 14vh;
+  
 }
 button:hover {
   background-color: #366db3;
@@ -62,17 +75,11 @@ button:hover {
   color: white;
 }
 
-img {
-  width: 100%;
-}
-.image {
-  margin-top: -138px;
-}
 .gif {
-        margin-left: 122px;
-        margin-bottom: 65px;
-        width: 45%;
-        height: 100%;
+        float: right;
+        margin: auto;
+        width: 20%;
+        height: 90%;
 }
 
 .circles {
@@ -185,17 +192,23 @@ img {
   }
 }
 
-@media (max-width: 766px)
+@media (max-width:1024px)
 {
-  body{
-    background-repeat:repeat-y ;
-  }
+ 
 
-  .gif
-  {
-    width: auto;
-    height: auto;
-  
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
+  .text{
+    margin: auto;
+    text-align: center;
+  }
+  .gif{
+    width:20vh;
+    
+  }
+  
 
 }
